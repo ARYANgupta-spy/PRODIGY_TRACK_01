@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: url('file:///C:/Users/Aryan%20gupta/Desktop/MY_SPY_LOGIN/background.jpeg') no-repeat center center/cover;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: rgba(192,192,192, 0.8); /* Silver with transparency */
+    color: #800080; /* Purple */
+    padding-top: 10px;
+    min-height: 70px;
+    border-bottom: #800080 3px solid; /* Purple */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+header nav {
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #800080; /* Purple */
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.hero-section {
+    height: 100vh;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.hero-section h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background: #800080; /* Purple */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #4b0082; /* Darker Purple */
+}
+
+.about-section, .services-section, .contact-section, .login-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service {
+    padding: 20px;
+}
+
+.service h3 {
+    margin-bottom: 10px;
+}
+
+.contact-section form, .login-section form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-section form input, .contact-section form textarea, .login-section form input {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: rgba(192,192,192, 0.8); /* Silver with transparency */
+    border: 1px solid #800080; /* Purple */
+    color: #800080; /* Purple */
+}
+
+.contact-section form button, .login-section form input[type="submit"] {
+    padding: 10px 20px;
+    background: #800080; /* Purple */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover, .login-section form input[type="submit"]:hover {
+    background: #4b0082; /* Darker Purple */
+}
+
+footer {
+    background: rgba(192,192,192, 0.8); /* Silver with transparency */
+    color: #800080; /* Purple */
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+/* Login section styling */
+#loginForm {
+    display: none;
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    width: 300px;
+    background: rgba(105,105,105, 0.9); /* Dark Silver with transparency */
+    padding: 20px;
+    border: 2px solid #800080; /* Purple */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0
